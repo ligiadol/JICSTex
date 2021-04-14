@@ -1,4 +1,4 @@
-%%   JICS_LaTexGuidelines.cls 2020/07/05 version 1.2
+%%   JICS_LaTexGuidelines.cls 2021/04/14 version 1.3
 %%   
 %%   This is the first released version of the LaTeX class for the authors of 
 %%   the Journal of Integrated Circuits and Systems. It is heavily based on the 
@@ -11,7 +11,7 @@
 %%   For bug reports and suggestions, please e-mail:
 %%   	Lígia d'Oliveira - ligiadol@fei.edu.br
 %%   	
-%%   Copyright 2020
+%%   Copyright 2020-2021
 %%   
 %%*************************************************************************
 %%   Legal Notice:
@@ -29,7 +29,7 @@
 %%   \footnotetext not supported
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{JICS_LaTexGuidelines}
-              [2020/07/05 v.1.2]
+              [2021/04/14 v.1.3]
 \RequirePackage{soul}
 % Recommended Packages %
 \RequirePackage[fleqn]{amsmath} % Provides several useful options in mathema-
@@ -611,7 +611,7 @@
 \setlength\bibindent{1.5em}
 \newenvironment{thebibliography}[1]
      {\section*{\refname}%
-      \@mkboth{\MakeUppercase\refname}{\MakeUppercase\refname}%
+      %V.1.3 - Correct markboth in the bibliography
       \list{\tiny\@biblabel{\@arabic\c@enumiv}}%
            {\tiny\settowidth\labelwidth{\@biblabel{#1}}%
             \leftmargin\labelwidth
